@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: rgba(104, 97, 98, 0.61);
+  height: 100vh;
+  display: grid;
+  align-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+  background-color: rgba(255, 192, 203, 0.317);
+}
+
+.word {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: 1rem;
+
+}
+
+.restart-button {
+  all: unset;
+  border: solid 1px black;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+
+  border : thin solid pink;
+  transition: 300ms;
+}
+
+.restart-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.streak {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 20px;
+  padding:0 10px;
+  color: rgba(243, 104, 127, 0.659);
+}
+
+.almost-lost {
+  color: rgba(255, 0, 0, 0.538);
+}
